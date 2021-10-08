@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Drop-menu</title>
+</head>
+<body>
+    <header>
+        <form class="header__form" action="#">
+            <label for="email">Email<input type="email" name="email" id="email" placeholder="megaadmin" required></label>
+            <label for="password">Пароль<input type="password" name="password" id="password" placeholder="*********" required></label>
+            <label for="remember">Запомнить меня<input type="checkbox" name="remember" id="remember"></label>
+            <button>Войти</button>
+            <a href="#">Зарегестрироватся</a>
+        </form>
+        <nav class="header__drop-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Институт<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">item_1</a></li>
+                        <li><a href="#">item_2</a></li>
+                        <li><a href="#">item_3</a></li>
+                        <li><a href="#">item_4</a></li>
+                        <li><a href="#">item_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Издания<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">item_1</a></li>
+                        <li><a href="#">item_2</a></li>
+                        <li><a href="#">item_3</a></li>
+                        <li><a href="#">item_4</a></li>
+                        <li><a href="#">item_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Образование<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Сведения об образовательной системе</a>
+                            <ul>
+                                <li><a href="#">item_1</a></li>
+                                <li><a href="#">item_2</a></li>
+                                <li><a href="#">item_3</a></li>
+                                <li><a href="#">Образование</a>
+                                    <ul>
+                                        <li><a href="#">item_1_1</a></li>
+                                        <li><a href="#">Аспирантура</a>
+                                            <ul>
+                                                <li><a href="#">item_1_2_1</a></li>
+                                                <li><a href="#">item_1_2_2</a></li>
+                                                <li><a href="#">item_1_2_3</a></li>
+                                                <li><a href="#">item_1_2_4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">item_1_3</a></li>
+                                        <li><a href="#">item_1_4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">item_5</a></li>
+                                <li><a href="#">item_6</a></li>
+                                <li><a href="#">item_7</a></li>
+                                <li><a href="#">item_8</a></li>
+                                <li><a href="#">item_9</a></li>
+                                <li><a href="#">item_10</a></li>
+                                <li><a href="#">item_11</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Наука<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">item_1</a></li>
+                        <li><a href="#">item_2</a></li>
+                        <li><a href="#">item_3</a></li>
+                        <li><a href="#">item_4</a></li>
+                        <li><a href="#">item_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">item_1</a></li>
+                        <li><a href="#">item_2</a></li>
+                        <li><a href="#">item_3</a></li>
+                        <li><a href="#">item_4</a></li>
+                        <li><a href="#">item_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Противодействие коррупции</a></li>
+                <form class="drop-menu__search">
+                    <input type="search" name="search" placeholder="Поиск по сайту" required>
+                    <button type="submit"></button>
+                </form>
+                <div class="drop-menu__switch-lan">
+                    <a href="#">RU</a>
+                    <a href="#">EN</a><br>
+                    <a href="#">DE</a>
+                    <a href="#">FR</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

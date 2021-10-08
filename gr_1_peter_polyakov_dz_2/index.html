@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <title>Формы</title>
+</head>
+
+<body>
+  <div class="all-sections">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="https://www.google.com/">Категории</a></li>
+        <li><a href="https://www.google.com/">Новости</a></li>
+        <li class="active"><a href="https://www.google.com/">Добавить новость</a></li>
+        <li><a href="https://www.google.com/">Настройки</a></li>
+      </ul>
+    </nav>
+    <form class="form" action="handler.php">
+      <div class="form__save-settings">
+        <ul class="save-settings__buttons">
+          <li><button type="button">Сохранить</button></li>
+          <li><button type="button">Сохранить и добавить</button></li>
+          <li><button type="button">Сохранить и закрыть</button></li>
+          <li><button type="button">Закрыть</button></li>
+        </ul>
+      </div>
+      <div class="form__description-settings">
+        <div class="form__article-description">
+          <ul class="article-description__list">
+            <li class="strong">
+              <label for="article-title">Название новости</label>
+              <input type="text" name="article-title" id="article-title">
+            </li>
+            <li class="small">
+              <label for="alias">Алиас</label>
+              <input type="text" name="alias" id="alias">
+            </li>
+            <li class="strong">
+              <label for="announcement">Анонс</label>
+              <textarea name="announcement" id="announcement" cols="30" rows="10"></textarea>
+            </li>
+            <li class="strong">
+              <label for="text">Текст</label>
+              <textarea name="text" id="text" cols="30" rows="20"></textarea>
+            </li>
+          </ul>
+        </div>
+        <div class="form__article-settings">
+          <ul class="article-settings__list">
+            <li class="strong">
+              <label for="photo">Фото</label>
+              <input type="file" accept="image/*" name="photo" id="photo">
+            </li>
+            <li class="strong">
+              <label for="slider">Слайдер</label>
+              <select name="slider" id="slider">
+                <option value="active">Активна</option>
+                <option value="inactive" selected>Не активна</option>
+              </select>
+            </li>
+            <li class="strong">
+              <label for="main-article">Основные новости</label>
+              <select name="main-article" id="main-article">
+                <option value="active">Активна</option>
+                <option value="inactive" selected>Не активна</option>
+              </select>
+            </li>
+            <li class="strong">
+              <label for="active">Активность</label>
+              <select name="active" id="active">
+                <option value="active">Активна</option>
+                <option value="inactive">Не активна</option>
+              </select>
+            </li>
+            <li class="strong">
+              <label for="categories">Категории</label>
+              <select name="categories" id="categories">
+                <option value="polit">Политика</option>
+                <option value="sport">Спорт</option>
+              </select>
+            </li>
+            <li class="small">
+              <label for="datetime">Дата создания новости</label>
+              <input type="datetime-local" name="datetime" id="datetime">
+            </li>
+            <li class="small">
+              <label for="views">Кол-во просмотров</label>
+              <input type="text" name="views" id="views">
+            </li>
+            <li class="small">
+              <label for="author">Автор</label>
+              <input type="text" name="author" id="author">
+            </li>
+            <li class="small">
+              <label for="tags">Теги</label>
+              <input type="text" name="tags" id="tags">
+            </li>
+            <li class="small">
+              <label for="meta">Keywords meta</label>
+              <input type="text" name="meta" id="meta">
+            </li>
+            <li class="small">
+              <label for="discription">Discription meta</label>
+              <textarea name="discription" id="discription" cols="30" rows="5"></textarea>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>

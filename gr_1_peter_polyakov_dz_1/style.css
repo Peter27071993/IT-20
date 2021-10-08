@@ -1,0 +1,29 @@
+div{
+   margin-bottom: 10%;
+}
+pre{
+   font-size: large;
+   font-family: serif;
+}
+
+/*Стили для таблицы*/
+table {
+   width: 50%;
+   border-top: 4px solid rgb(110, 107, 107);
+   border-right: 4px solid rgb(54, 50, 50);
+   border-bottom: 4px solid rgb(54, 50, 50);
+   border-left: 4px solid rgb(110, 107, 107);
+   background-color: rgb(230, 238, 230);
+}
+th,td {
+   padding: 5px;
+   border-top: 2px solid rgb(54, 50, 50);
+   border-right: 2px solid rgb(110, 107, 107);
+   border-bottom: 2px solid rgb(110, 107, 107);
+   border-left: 2px solid rgb(54, 50, 50);
+}
+caption {
+   font-size: large;
+   font-weight: 700;
+}
+

@@ -1,0 +1,130 @@
+
+body {
+    background-image: url(../img/background40.jpg);
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+header {
+    background-color: #B9B7B8;
+    padding: 10px 0 0 10px;
+}
+.header__form {
+    padding-bottom: 15px;
+}
+.header__form input[type="email"] input[type="password"] {
+    background-color: #FAFFBD;
+}
+.header__form button {
+    background-color: #A60606;
+    color: #DEDCDD;
+}
+.header__form a {
+    color: black;
+}
+
+.header__drop-menu * {
+    margin: 0;
+    padding: 0;
+}
+.header__drop-menu ul {
+    list-style: none;
+}
+.header__drop-menu > ul {
+    display: flex;
+    justify-content: start;
+}
+.header__drop-menu > ul li {
+    position: relative;
+    border-right: 2px solid #828385;
+}
+.header__drop-menu > ul li:last-child {
+    border-right: none;
+}
+.header__drop-menu > ul li > a i.fas {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.header__drop-menu > ul li a {
+    display: block;
+    padding: 15px 20px 15px 35px;
+    font-size: 18px;
+    color: #454547;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.header__drop-menu li a:hover {
+    background: #FDFDFD;
+    color: #A60606;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.5s ease;
+}
+
+.header__drop-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.header__drop-menu li > ul li {
+    border: 1px solid #c7c8ca;
+}
+.header__drop-menu li > ul li a {
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.header__drop-menu li > ul li ul {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.header__drop-menu li:hover > ul {
+    display: block;
+}
+
+.drop-menu__search {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    padding-left: 20px;
+    border: 1px solid rgb(109, 108, 108);
+    height: 49px;
+    background-color: #FDFDFD;
+    }
+.drop-menu__search input[type="search"] {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #FDFDFD;
+    font-size: 18px;
+}
+.drop-menu__search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: url(../img/search-solid.svg) no-repeat 50% 50%;
+    background-size: 25px;
+    background-color: #A60606;
+}
+
+.drop-menu__switch-lan a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    padding: 3px;
+}
+.drop-menu__switch-lan a:first-child {
+    background-color: black;
+    color:white;
+}
